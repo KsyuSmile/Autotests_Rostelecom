@@ -1,0 +1,7 @@
+valid_phone = "79371234567"
+valid_pass = "15QygtjJ67"
+valid_email = "test_email@mail.ru"
+valid_login = "KsyuSmile"
+valid_ls = "123456789123"
+invalid_phone = "79371111111"
+invalid_email = "test_email2@mail.ru"
