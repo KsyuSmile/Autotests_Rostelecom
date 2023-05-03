@@ -15,7 +15,7 @@
 Попарное тестирование применялось для проверки пар логин и пароль (валидные-невалидные данные). <br>
 <br>
 ДЛЯ АВТОТЕСТОВ НЕОБХОДИМО:<br>
-• На ПК установлены Python3 и PyTest
+• На ПК установить Python3 и PyTest <br>
 • Скачать Selenium WebDriver - https://chromedriver.chromium.org/downloads <br>
-• Файл WebDriver разместить в орневой папке проекта <br>
+• Файл WebDriver разместить в корневой папке проекта <br>
 • Установить библиотеки pytest и selenium
