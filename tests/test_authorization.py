@@ -65,7 +65,7 @@ def test_auth_by_phone_invalid(browser, auth_elements, account_page, error_messa
 
 
 def test_auth_by_email_invalid(browser, auth_elements, account_page, auth_tab, error_message):
-    """Проверяем авторизацию по номеру телефона с неавторизованным номером телефона"""
+    """Проверяем авторизацию по адресу электронной почты с неавторизованной почтой"""
 
     auth_elements.go_to_site()
     auth_tab.click_tab_email()
