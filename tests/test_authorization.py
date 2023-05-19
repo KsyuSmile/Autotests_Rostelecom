@@ -44,7 +44,7 @@ def test_auth_by_ls_valid(browser, auth_elements, button_exit, auth_tab):
     assert button_exit.check_button_exit() == "Выйти"
 
 
-def test_auth_empty_value(browser, auth_elements, account_page, error_message):
+def test_auth_empty_value(browser, auth_elements, error_message):
     """Проверяем авторизацию с пустыми полями для ввода"""
 
     auth_elements.go_to_site()
@@ -54,7 +54,7 @@ def test_auth_empty_value(browser, auth_elements, account_page, error_message):
     assert error_message.error_message_username() == "Введите номер телефона"
 
 
-def test_auth_by_phone_invalid(browser, auth_elements, account_page, error_message):
+def test_auth_by_phone_invalid(browser, auth_elements, error_message):
     """Проверяем авторизацию по номеру телефона с неавторизованным номером телефона"""
 
     auth_elements.go_to_site()
@@ -64,7 +64,7 @@ def test_auth_by_phone_invalid(browser, auth_elements, account_page, error_messa
     assert error_message.error_message_login_end_pass() == "Неверный логин или пароль"
 
 
-def test_auth_by_email_invalid(browser, auth_elements, account_page, auth_tab, error_message):
+def test_auth_by_email_invalid(browser, auth_elements, auth_tab, error_message):
     """Проверяем авторизацию по адресу электронной почты с неавторизованной почтой"""
 
     auth_elements.go_to_site()
