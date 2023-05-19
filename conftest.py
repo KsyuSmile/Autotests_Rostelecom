@@ -27,7 +27,7 @@ def auth_tab(browser):
 
 
 @pytest.fixture(scope="session")
-def account_page(browser):
+def button_exit(browser):
     button_exit = AccountPage(browser)
     return button_exit
 
