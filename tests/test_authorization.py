@@ -2,7 +2,7 @@ from config import valid_phone, valid_email, valid_login, valid_pass, valid_ls, 
 
 
 def test_auth_by_phone_valid(browser, auth_elements, button_exit):
-    """Проверка авторизации по номеру телефона с валидными данными, """
+    """Проверка авторизации по номеру телефона с валидными данными"""
 
     auth_elements.go_to_site()
     auth_elements.input_username().send_keys(valid_phone)
